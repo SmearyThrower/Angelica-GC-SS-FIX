@@ -1,10 +1,12 @@
 package com.gtnewhorizons.angelica.mixins.late.client.galacticraft;
 
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Pseudo;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
 import org.lwjgl.opengl.GL11;
 
+@Pseudo
 @Mixin(targets = "micdoodle8.mods.galacticraft.core.proxy.ClientProxyCore", remap = false)
 public class MixinClientProxyCore {
 
