@@ -593,6 +593,14 @@ public enum Mixins implements IMixins {
         .addClientMixins("mcpatcherforge.ctm_cc.MixinTextureMap")
     ),
     //End from NotFine
+
+    GALACTICRAFT_COMPAT(new MixinBuilder("Disable Galacticraft gravity-turn GL rotation")
+        .setPhase(Phase.LATE)
+        .addRequiredMod(TargetedMod.GALACTICRAFT)
+        .setApplyIf(() -> CompatConfig.fixGalacticraftGravityTurn)
+        .addClientMixins(
+            "late.client.galacticraft.MixinClientProxyCore"
+        )),
     ;
 
     private final MixinBuilder builder;
