@@ -15,6 +15,7 @@ public enum TargetedMod implements ITargetMod {
     DYNAMIC_SURROUNDINGS_ORIGINAL("org.blockartistry.mod.DynSurround.asm.TransformLoader", "dsurround"),
     EXTRAUTILS(null, "ExtraUtilities"),
     FALSETWEAKS("com.falsepattern.falsetweaks.asm.CoreLoadingPlugin", "falsetweaks"),
+    GALACTICRAFT(null, "galacticraftcore"),
     MINEFACTORY_RELOADED(null, "MineFactoryReloaded"),
     NTM_SPACE("com.hbm.dim.SolarSystem"),
     IC2("ic2.core.coremod.IC2core", "IC2"),
