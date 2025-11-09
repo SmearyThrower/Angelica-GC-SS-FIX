@@ -44,6 +44,11 @@ public class CompatConfig {
     @Config.DefaultBoolean(true)
     @Config.RequiresMcRestart
     public static boolean fixSecurityCraft;
+
+    @Config.Comment("Disable Galacticraft gravity-turn GL rotation (Angelica compat)")
+    @Config.DefaultBoolean(true)
+    @Config.RequiresMcRestart
+    public static boolean fixGalacticraftGravityTurn;
     
     @Config.Comment("Apply tweaks to NTM:Space")
     @Config.DefaultBoolean(true)
